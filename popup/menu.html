@@ -1,26 +1,42 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <title>Steemswitch</title>
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale="1.0">
-        <link rel="stylesheet" type="text/css" href="menu.css">
-    </head>
-      <body>
-          <div>
-              <h1> Steemswitch</h1>
-              <h2><strong>View on:</strong></h2>
-                  <p>
-                    <a href="https://steemit.com" title="steemit"><img src="img/steem.png" title="steemit"class="flowLeft">Steemit</a>
-                    <a href="https://busy.org" title="busy"><img src="img/busy.png" title="busy"class="flowLeft">Busy</a>
-                    <a href="https://beta.chainbb.com" title="chainbb"><img src="img/steem.png" title="chainbb"class="flowLeft">Chainbb</a>
-                  </p>
-              <hr>
-              <h2><strong>Analyse using:</strong></h2>
-                <p>
-                    <a href="https://steemdb.com" title="steemdb"><img src="img/steem.png" title="steemdb"class="flowLeft">Steemdb</a>
-                    <a href="https://steemd.com" title="steemd"><img src="img/steemd.png" title="steemd" class=flowLeft>Steemd</a>
-              </p>
-          </div>
-    </body>
+	<head>
+	<title>Steemswitch</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" initial-scale="1.0">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+	<script language="javascript">
+		function getHostname(url) {
+			var pattern=/(.+:\/\/)?([^\/]+)(\/.*)*/i;
+			var arr=pattern.exec(url);
+			return arr[2];
+		}
+	
+		function steemSwitch(destination) {
+			//  var url = tabs.activeTab.url;
+			// var thisSite = getHostname(url);
+			
+			// tabs.activeTab.open(url.replace('https://'+thisSite,'https://'+destination));
+			
+			return false;
+		}
+	</script>
+	</head>
+	<body>
+		<div>
+		<h1> Steemswitch</h1>
+		<h2><strong>View on:</strong></h2>
+			<p>
+			<a href="https://steemit.com" onclick="return steemSwitch('steemit.com');" title="steemit"><img src="/icons/steem.png" title="steemit"class="flowLeft">Steemit</a>
+			<a href="https://busy.org" onclick="tabs.activeTab.alert('busy.org'); return false;" title="busy"><img src="/icons/busy.png" title="busy"class="flowLeft">Busy</a>
+			<a href="https://beta.chainbb.com" onclick="return steemSwitch('beta.chainbb.com');" title="chainbb"><img src="/icons/steem.png" title="chainbb"class="flowLeft">Chainbb</a>
+			</p>
+		<hr>
+		<h2><strong>Analyse using:</strong></h2>
+		<p>
+			<a href="https://steemdb.com" onclick="return steemSwitch('steemdb.com');" title="steemdb"><img src="/icons/steem.png" title="steemdb"class="flowLeft">Steemdb</a>
+			<a href="https://steemd.com" onclick="return steemSwitch('steemd.com');" title="steemd"><img src="/icons/steemd.png" title="steemd" class=flowLeft>Steemd</a>
+		</p>
+		</div>
+	</body>
 </html>
