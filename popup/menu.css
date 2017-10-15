@@ -1,1 +1,78 @@
-/* menu css goes here *//
+html div{
+    background-color: #FAFAFA;
+    width: 160px;
+    margin: auto; 
+    border-style: solid;
+    border-color:#EFF2FB;
+    border-width: 1px;
+    border-radius:5px;
+    padding: 0.5em;
+    align-content: center;
+    
+}
+h1{
+    line-height: 2em;
+    font: 100% Verdana, Geneva, sans-seriff; 
+    font-style: normal;
+    color:#58ACFA;
+    margin-bottom: 0.5em;
+    text-align: center;
+    text-transform: uppercase;
+   
+    
+    
+}
+h2{
+	line-height: 1em;
+    font: 100% Verdana, Geneva, sans-seriff; 
+    font-style: normal;
+    color:#A4A4A4;
+    margin-bottom: 0.5em;
+    text-indent: 1em;
+    clear:right;
+
+}
+a{
+    color: #045FB4;
+    font:0.9em Verdana, Geneva, sans-seriff; 
+    display:block;
+    text-indent: 2em;
+    text-decoration:none;
+    margin-bottom: 0.5em;
+    background-color: #EFF2FB;
+    border:1px solid #A9BCF5;
+    padding: 0.5em;
+    border-radius: 3px;
+  
+   
+}
+a:hover{
+    color: #58ACFA;
+}
+a:active{
+    color: ##A9D0F5;
+    font-size: 90%;
+  
+    
+}
+a:focus{
+    
+    color: ##A9D0F5;
+    font-size: 90%;
+}
+ul{
+    list-style-type:none;
+}
+
+img{
+    margin-right: 5px;
+}
+img.logo{
+    float: right;
+    margin-left:0.2em;
+   }
+hr{
+    border-style:solid;
+    border-color:#F0F0F0;
+   
+}
