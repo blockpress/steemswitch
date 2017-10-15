@@ -47,7 +47,8 @@ a{
    
 }
 a:hover{
-    color: #58ACFA;
+    color: #136;
+    background: #def;
 }
 a:active{
     color: ##A9D0F5;
