@@ -9,7 +9,7 @@
 		"48": "icons/steemswitch_48.png",
 		"96": "icons/steemswitch_96.png"
 	},
-	
+
 	"permissions": [
 	"activeTab"
 	],
@@ -19,11 +19,11 @@
 		"default_title": "SteemSwitch",
 		"default_popup": "popup/menu.html"
 	},
-  
+
 	"content_scripts": [
 	{
 		"matches": ["*://*/*"],
 		"js": ["steemswitch.js"]
 	}
-  	]
+  ]
 }

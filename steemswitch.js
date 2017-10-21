@@ -1,4 +1,4 @@
-var href, busy, cbb, sd, sdb, sswitch;
+/*  var href, busy, cbb, sd, sdb, sswitch;
 thisSite = window.location.hostname;
 switch(thisSite) {
 	case "steemit.com":
@@ -19,7 +19,7 @@ switch(thisSite) {
 	default:
 		//addSwitchToLinks(document) //TO DO later
 		break;
-}
+} */
 
 /* function addSwitchToLinks(containerElement) {
 	var a = containerElement.getElementsByTagName('a');
@@ -61,7 +61,18 @@ switch(thisSite) {
 	}
 } */
 
-function addSwitchHeaderMenu(thisSite) {
+/* function steemSwitch(destination,url) {
+	if(url == '') {
+		url = window.location.href;
+		thisSite = window.location.hostname;
+	} else {
+		// TO DO: calculate thisSite from url. 
+	}
+	
+	window.open(url.replace('https://'+thisSite,'https://'+destination));
+} */
+
+/* function addSwitchHeaderMenu(thisSite) {
 	var si, busy, cbb, sd, sdb, footer, header;
 	var href = window.location.href;
 	var menu = document.createElement("div");
@@ -114,7 +125,6 @@ function addSwitchHeaderMenu(thisSite) {
 			var busyHeader = document.getElementsByTagName('header')[0];
 			busyHeader.insertBefore(menu, busyHeader.firstChild);
 			break;
-			break;
 		case "beta.chainbb.com":
 			htmlBody.insertBefore(menu, htmlBody.firstChild);
 			break;
@@ -139,4 +149,4 @@ function addSwitchHeaderMenu(thisSite) {
 	
 	//footer = menu.cloneNode(true);
 	//htmlBody.appendChild(footer); 
-}
+} */
