@@ -1,40 +1,27 @@
 <!doctype html>
 <html lang="en">
 	<head>
-	<title>Steemswitch</title>
+	<title>SteemSwitch</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width" initial-scale="1.0">
 	<link rel="stylesheet" type="text/css" href="menu.css">
-	<script language="javascript">
-		function getHostname(url) {
-			// This function will be used by the listener to get a hostname from a url
-			var pattern=/(.+:\/\/)?([^\/]+)(\/.*)*/i;
-			var arr=pattern.exec(url);
-			return arr[2];
-		}
-
-		// TO DO: Add listener here
-			//  var url = tabs.activeTab.url;
-			// var thisSite = getHostname(url);
-
-			// tabs.activeTab.open(url.replace('https://'+thisSite,'https://'+destination));
-	</script>
 	</head>
 	<body>
-		<div>
-		<h1> Steemswitch</h1>
+		<div class="menu">
+		<h1>SteemSwitch</h1>
 		<h2><strong>View on:</strong></h2>
-			<p>
-			<a href="https://steemit.com" title="steemit" class="steemit"><img src="/icons/steem.png" title="steemit"class="flowLeft">Steemit</a>
-			<a href="https://busy.org" title="busy" class="busy"><img src="/icons/busy.png" title="busy"class="flowLeft">Busy</a>
-			<a href="https://beta.chainbb.com" title="chainbb" class="chainbb"><img src="/icons/steem.png" title="chainbb"class="flowLeft">Chainbb</a>
-			</p>
+			<div>
+			<span title="steemit" class="steemswitch"><img src="/icons/steem.png" title="steemit" class="flowLeft">Steemit</span>
+			<span title="busy" class="steemswitch"><img src="/icons/busy.png" title="busy" class="flowLeft">Busy</span>
+			<span href="https://beta.chainbb.com" title="chainbb" class="steemswitch"><img src="/icons/steem.png" title="chainbb" class="flowLeft">Chainbb</span>
+		</div>
 		<hr>
 		<h2><strong>Analyse using:</strong></h2>
-		<p>
-			<a href="https://steemdb.com" title="steemdb" class="steemdb"><img src="/icons/steem.png" title="steemdb"class="flowLeft">Steemdb</a>
-			<a href="https://steemd.com" title="steemd" class="steemd"><img src="/icons/steemd.png" title="steemd" class=flowLeft>Steemd</a>
-		</p>
+		<div>
+			<span href="https://steemdb.com" title="steemdb" class="steemswitch"><img src="/icons/steem.png" title="steemdb" class="flowLeft">Steemdb</span>
+			<span href="https://steemd.com" title="steemd" class="steemswitch"><img src="/icons/steemd.png" title="steemd" class=flowLeft>Steemd</span>
 		</div>
+		</div>
+		<script language="javascript" src="menu.js"></script>
 	</body>
 </html>
