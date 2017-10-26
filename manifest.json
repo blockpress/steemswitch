@@ -18,12 +18,5 @@
 		"default_icon": "icons/steemswitch_32.png",
 		"default_title": "SteemSwitch",
 		"default_popup": "popup/menu.html"
-	},
-
-	"content_scripts": [
-	{
-		"matches": ["*://*/*"],
-		"js": ["steemswitch.js"]
 	}
-  ]
 }
