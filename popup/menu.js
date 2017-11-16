@@ -23,6 +23,9 @@ document.addEventListener("click", (e) => {
 			    case "Chainbb":
 			      destination = "https://beta.chainbb.com";
 			      break;
+          case "Utopian":
+  			      destination = "https://utopian.io";
+  			      break;
 			    case "Steemd":
 			      destination = "https://steemd.com";
 			      break;

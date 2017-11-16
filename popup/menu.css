@@ -11,21 +11,15 @@ html div.menu{
 
 }
 h1{
-    line-height: 2em;
     font: 100% Verdana, Geneva, sans-seriff;
-    font-style: normal;
     color:#58ACFA;
     margin-bottom: 0.5em;
     text-align: center;
     text-transform: uppercase;
-
-
-
 }
 h2{
 	line-height: 1em;
     font: 100% Verdana, Geneva, sans-seriff;
-    font-style: normal;
     color:#A4A4A4;
     margin-bottom: 0.5em;
     text-indent: 1em;
