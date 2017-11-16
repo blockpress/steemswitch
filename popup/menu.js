@@ -26,6 +26,9 @@ document.addEventListener("click", (e) => {
           case "Utopian":
   			      destination = "https://utopian.io";
   			      break;
+          case "Yehey":
+      			  destination = "https://yehey.org";
+      			  break;
 			    case "Steemd":
 			      destination = "https://steemd.com";
 			      break;
