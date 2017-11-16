@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "SteemSwitch",
-	"version": "1.0",
+	"version": "1.1",
 
 	"description": "For links to pages on the steem blockchain, SteemSwitch will add additional links to the same page on alternative steem websites. Useful when one webnode is down, or you want links to your own prefered web client.",
 
@@ -18,12 +18,5 @@
 		"default_icon": "icons/steemswitch_32.png",
 		"default_title": "SteemSwitch",
 		"default_popup": "popup/menu.html"
-	},
-
-	"content_scripts": [
-	{
-		"matches": ["*://*/*"],
-		"js": ["steemswitch.js"]
 	}
-  ]
 }
